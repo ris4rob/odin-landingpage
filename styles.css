@@ -18,6 +18,15 @@ body {
           /* padding: 0 10rem; */
 }
 
+button, a {
+          cursor: pointer;
+          transition: all 250ms ease-in-out;
+}
+
+button:hover, a:hover {
+          transform: scale(1.03);
+}
+
 /* HEADER */
 
 header {
