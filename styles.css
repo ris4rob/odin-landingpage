@@ -1,5 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
 * {
           box-sizing: border-box;
           padding: 0px;
           margin: 0px;
+          font-family: 'Roboto', sans-serif;
+}
+
+:root {
+          --primary-color: #1F2937;
+          --secondary-color: #F9FAF8;
+          --accent-color: #3882f6;
+
+}
+
+body {
+          /* padding: 0 10rem; */
+}
+
+/* HEADER */
+
+header {
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+          padding: 0 10rem;
+}
+
+header h1 {
+          font-size: 1.5rem;
+}
+
+nav {
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem 0;
+}
+
+nav ul{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          text-decoration: none;
+          list-style: none;
+          gap: 1rem;
+}
+
+nav ul li a{
+          color: var(--secondary-color);
+          text-decoration: none;
+}
+
+/* SHOWCASE */
+
+.showcase {
+          display: flex;
+          padding: 5rem 0;
+}
+
+.showcase img {
+          width: 650px;
+          height: 250px;
+}
+
+.showcase-wrapper {
+          padding: 0 2rem 0 0;
+}
+
+.showcase-header {
+          font-size: 3rem;
+          font-weight: bold;
+}
+
+.showcase-text {
+          font-size: 1.2rem;
+          color: #E5E7EB;
+          margin: .5rem 0;
+}
+
+.showcase-btn {
+          margin-top: 1rem;
+          padding: .5rem 2.1rem;
+          border-radius: 6px;
+          border-style: none;
+          background-color: var(--accent-color);
+          color: var(--secondary-color)
+}
+
+/* CARD SECTION */
+
+.card-container {
+          margin: 0 10rem;
+          text-align: center;
+          margin-bottom: 5rem;
+}
+
+.card-text {
+          margin: 3rem 0;
+          font-size: 2.5rem;
+          font-weight: 900;
+}
+
+.card-wrapper {
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+
+}
+
+.card {
+          padding: 0 1rem;
+}
+
+.card img {
+          width: 180px;
+          height: 180px;
+          border-radius: 1rem;
+}
+
+.card p {
+          margin-top: .5rem;
+}
+
+/* QUOTE SECTION */
+
+.quote {
+          padding: 6rem 10rem;
+          background-color: #E5E7EB;
+          
+}
+
+.quote h2 {
+          font-size: 2.2rem;
+          font-style: italic;
+          font-weight: lighter;
+          display: flex;
+          flex-direction: column;
+}
+
+.quote span {
+          font-weight: bold;
+          font-style: normal;
+          align-self: end;
+          margin-top: 1rem;
+}
+
+/* CALL TO ACTION */
+
+.call-to-action-wrapper {
+          background-color: var(--accent-color);
+          margin: 6rem;
+          padding: 3rem 9rem;
+          border-radius: .5rem;
+          color: var(--secondary-color);
+          display: flex;
+          justify-content: space-between;
+}
+
+.call-to-action-wrapper button {
+          padding: .5rem 2.5rem;
+          border-radius: .5rem;
+          border: 2px solid var(--secondary-color);
+          background-color: transparent;
+          color: var(--secondary-color);
+          font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+          padding: 3rem;
+          text-align: center;
 }
